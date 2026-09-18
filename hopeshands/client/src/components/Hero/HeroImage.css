@@ -1,0 +1,269 @@
+
+.hero-image-container{
+
+    flex:1;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/* Main Image */
+
+.hero-main-image{
+
+    width:100%;
+
+    max-width:620px;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:120px 30px 120px 30px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+    transition:.4s;
+}
+
+.hero-main-image:hover{
+
+    transform:scale(1.03);
+}
+
+/* Floating Cards */
+
+.floating-card{
+
+    position:absolute;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+    z-index:10;
+}
+
+.floating-card:hover{
+
+    transform:translateY(-8px);
+}
+
+/* Donation Card */
+
+.donation-card{
+
+    top:70px;
+
+    right:-35px;
+
+    width:260px;
+
+    padding:24px;
+}
+
+.floating-icon{
+
+    width:55px;
+
+    height:55px;
+
+    background:#eafaf0;
+
+    color:#16a34a;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    margin-bottom:18px;
+}
+
+.donation-card h3{
+
+    color:#111827;
+
+    margin-bottom:12px;
+
+    font-size:22px;
+}
+
+.donation-card p{
+
+    color:#6b7280;
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+}
+
+.donation-card button{
+
+    width:100%;
+
+    padding:13px;
+
+    background:#16a34a;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.donation-card button:hover{
+
+    background:#15803d;
+}
+
+/* Supporter Card */
+
+.supporter-card{
+
+    bottom:40px;
+
+    left:-40px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:18px 22px;
+}
+
+.supporter-avatars{
+
+    display:flex;
+}
+
+.supporter-avatars img{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    border:3px solid white;
+
+    margin-left:-12px;
+}
+
+.supporter-avatars img:first-child{
+
+    margin-left:0;
+}
+
+.supporter-card h4{
+
+    color:#111827;
+
+    margin-bottom:6px;
+
+    font-size:18px;
+}
+
+.supporter-card span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#16a34a;
+
+    font-weight:600;
+
+    font-size:14px;
+}
+
+/* Responsive */
+
+@media(max-width:1100px){
+
+.hero-image-container{
+
+margin-top:50px;
+}
+
+.hero-main-image{
+
+height:520px;
+
+border-radius:60px;
+}
+
+.donation-card{
+
+position:static;
+
+margin-top:20px;
+
+width:100%;
+}
+
+.supporter-card{
+
+position:static;
+
+margin-top:20px;
+
+width:100%;
+}
+
+.hero-image-container{
+
+flex-direction:column;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-main-image{
+
+height:420px;
+
+border-radius:35px;
+}
+
+.donation-card{
+
+padding:20px;
+}
+
+.supporter-card{
+
+flex-direction:column;
+
+text-align:center;
+}
+
+}

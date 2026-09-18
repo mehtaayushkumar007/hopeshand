@@ -1,0 +1,412 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    width:100%;
+    height:90px;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.06);
+
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+/* ================= LOGO ================= */
+
+.navbar-logo{
+
+    flex:1;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    text-decoration:none;
+
+}
+
+.logo-icon{
+
+    font-size:42px;
+
+    color:#16a34a;
+
+}
+
+.logo-text h2{
+
+    color:#111827;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    line-height:1;
+
+}
+
+.logo-text span{
+
+    color:#6b7280;
+
+    font-size:12px;
+
+    font-weight:500;
+
+}
+
+/* ================= LINKS ================= */
+
+.navbar-links{
+
+    flex:2;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+}
+
+.navbar-links a{
+
+    text-decoration:none;
+
+    color:#1f2937;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.navbar-links a:hover{
+
+    color:#16a34a;
+
+}
+
+.navbar-links .active{
+
+    color:#16a34a;
+
+}
+
+.navbar-links .active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-10px;
+
+    width:100%;
+    height:3px;
+
+    border-radius:20px;
+
+    background:#16a34a;
+
+}
+
+/* ================= RIGHT ================= */
+
+.navbar-right{
+
+    flex:1.3;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:18px;
+
+}
+
+/* Search */
+
+.search-box{
+
+    width:270px;
+
+    height:46px;
+
+    background:#f9fafb;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:14px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 15px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+}
+
+.search-icon{
+
+    color:#6b7280;
+
+    cursor:pointer;
+
+}
+
+/* Notification */
+
+.notification{
+
+    width:46px;
+    height:46px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.notification:hover{
+
+    background:#f3f4f6;
+
+}
+
+.notification svg{
+
+    font-size:22px;
+
+    color:#374151;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:6px;
+    right:5px;
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    background:#16a34a;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:11px;
+
+    font-weight:600;
+
+}
+
+/* Login */
+
+.login-btn{
+
+    width:100px;
+
+    height:46px;
+
+    background:#fff;
+
+    border:1px solid #d1d5db;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#f3f4f6;
+
+}
+
+/* Get Started */
+
+.start-btn{
+
+    width:150px;
+
+    height:48px;
+
+    background:#16a34a;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.start-btn:hover{
+
+    background:#15803d;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(22,163,74,.25);
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1200px){
+
+    .search-box{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .navbar{
+
+        padding:0 25px;
+
+    }
+
+    .navbar-links{
+
+        gap:20px;
+
+    }
+
+    .navbar-links a{
+
+        font-size:14px;
+
+    }
+
+    .logo-text h2{
+
+        font-size:24px;
+
+    }
+
+    .start-btn{
+
+        width:130px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+
+        gap:20px;
+
+    }
+
+    .navbar-logo,
+    .navbar-links,
+    .navbar-right{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .navbar-links{
+
+        flex-wrap:wrap;
+
+        gap:18px;
+
+    }
+
+    .navbar-right{
+
+        flex-wrap:wrap;
+
+    }
+
+}

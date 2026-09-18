@@ -1,0 +1,135 @@
+.donor-card{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:-35px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(12px);
+
+    padding:18px 24px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+    z-index:10;
+}
+
+.donor-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 55px rgba(22,163,74,.18);
+}
+
+/* Avatar Group */
+
+.donor-avatars{
+
+    display:flex;
+}
+
+.donor-avatars img{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid white;
+
+    margin-left:-12px;
+
+    transition:.3s;
+}
+
+.donor-avatars img:first-child{
+
+    margin-left:0;
+}
+
+.donor-avatars img:hover{
+
+    transform:translateY(-5px);
+}
+
+/* Text */
+
+.donor-info h4{
+
+    color:#111827;
+
+    font-size:18px;
+
+    margin-bottom:6px;
+
+    font-weight:700;
+}
+
+.donor-info p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#6b7280;
+
+    font-size:14px;
+}
+
+.heart-icon{
+
+    color:#ef4444;
+}
+
+/* Responsive */
+
+@media(max-width:1100px){
+
+.donor-card{
+
+    position:static;
+
+    margin-top:20px;
+
+    width:100%;
+
+    max-width:340px;
+}
+
+}
+
+@media(max-width:768px){
+
+.donor-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.donor-info p{
+
+    justify-content:center;
+}
+
+}

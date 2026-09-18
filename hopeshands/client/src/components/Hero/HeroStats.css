@@ -1,0 +1,151 @@
+/* ===============================
+   HERO STATS
+================================= */
+
+.hero-stats{
+
+    margin-top:90px;
+
+    width:100%;
+}
+
+/* Container */
+
+.stats-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+}
+
+/* Card */
+
+.stat-card{
+
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    transition: .35s ease-out;
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: 378px;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#22c55e;
+
+    box-shadow:0 25px 45px rgba(34,197,94,.18);
+}
+
+/* Icon */
+
+.stat-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#ecfdf5;
+
+    color:#16a34a;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    transition:.3s;
+}
+
+.stat-card:hover .stat-icon{
+
+    background:#16a34a;
+
+    color:#ffffff;
+
+    transform:rotate(10deg) scale(1.08);
+}
+
+/* Number */
+
+.stat-card h2{
+
+    font-size:38px;
+
+    font-weight:800;
+
+    color:#111827;
+
+    margin-bottom:10px;
+}
+
+/* Title */
+
+.stat-card p{
+
+    color:#6b7280;
+
+    font-size:17px;
+
+    font-weight:500;
+}
+
+/* ===============================
+   TABLET
+================================= */
+
+@media(max-width:992px){
+
+.stats-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media(max-width:600px){
+
+.stats-container{
+
+grid-template-columns:1fr;
+
+}
+
+.stat-card{
+
+padding:28px;
+
+}
+
+.stat-card h2{
+
+font-size:32px;
+
+}
+
+}

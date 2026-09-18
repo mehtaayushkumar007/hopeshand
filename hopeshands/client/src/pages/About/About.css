@@ -1,0 +1,733 @@
+.about-page {
+  min-height: 100vh;
+  background: #f7f9f8;
+  color: #17231e;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+  min-height: 500px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url("https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1800&q=85");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 23, 16, 0.94),
+    rgba(7, 23, 16, 0.72),
+    rgba(7, 23, 16, 0.35)
+  );
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+
+  width: min(700px, 90%);
+  margin-left: 7%;
+}
+
+.about-label,
+.section-label {
+  display: inline-block;
+
+  color: #4fc783;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+
+  margin-bottom: 14px;
+}
+
+.about-hero h1 {
+  color: white;
+  font-size: clamp(42px, 5vw, 66px);
+  line-height: 1.07;
+  margin: 0;
+
+  font-weight: 800;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: #51c987;
+}
+
+.about-hero p {
+  color: rgba(255, 255, 255, 0.8);
+
+  max-width: 620px;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  margin: 23px 0 30px;
+}
+
+.about-hero-buttons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.about-primary-btn,
+.about-secondary-btn,
+.about-outline-btn {
+  height: 47px;
+
+  padding: 0 20px;
+
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  font-size: 14px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.about-primary-btn {
+  border: none;
+  background: #2db870;
+  color: white;
+}
+
+.about-primary-btn:hover {
+  background: #25a461;
+  transform: translateY(-2px);
+}
+
+.about-secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.about-secondary-btn:hover {
+  background: white;
+  color: #173025;
+}
+
+.about-outline-btn {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: white;
+}
+
+.about-outline-btn:hover {
+  background: white;
+  color: #173025;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.about-intro {
+  width: min(1150px, 90%);
+  margin: 90px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  gap: 75px;
+}
+
+.about-intro-image {
+  position: relative;
+}
+
+.about-intro-image img {
+  width: 100%;
+  height: 500px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  display: block;
+}
+
+.impact-card {
+  position: absolute;
+
+  bottom: 25px;
+  right: -25px;
+
+  background: white;
+
+  padding: 17px 20px;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  box-shadow: 0 10px 30px rgba(26, 55, 40, 0.16);
+}
+
+.impact-card svg {
+  color: #27ae68;
+}
+
+.impact-card strong {
+  display: block;
+  font-size: 14px;
+  color: #1c3025;
+}
+
+.impact-card span {
+  display: block;
+  font-size: 11px;
+  color: #829087;
+  margin-top: 3px;
+}
+
+.about-intro-content h2 {
+  font-size: 39px;
+  line-height: 1.15;
+
+  color: #17271e;
+
+  margin: 0 0 20px;
+}
+
+.about-intro-content h2 span {
+  display: block;
+  color: #27a866;
+}
+
+.about-intro-content > p {
+  color: #6e7c74;
+
+  font-size: 15px;
+  line-height: 1.75;
+
+  margin: 0 0 15px;
+}
+
+.about-check-list {
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.about-check-list div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #405148;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-check-list svg {
+  color: #2bb46c;
+}
+
+/* =========================
+   MISSION
+========================= */
+
+.mission-section {
+  background: white;
+
+  padding: 85px 5%;
+}
+
+.mission-heading {
+  text-align: center;
+
+  max-width: 680px;
+  margin: 0 auto 45px;
+}
+
+.mission-heading h2 {
+  font-size: 37px;
+
+  margin: 0 0 13px;
+
+  color: #18281f;
+}
+
+.mission-heading p {
+  margin: 0;
+
+  color: #75827b;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.mission-grid {
+  width: min(1150px, 100%);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.mission-card {
+  border: 1px solid #e6ece8;
+
+  border-radius: 10px;
+
+  padding: 28px 23px;
+
+  background: #fbfcfb;
+
+  transition: 0.25s;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 30px rgba(30, 67, 48, 0.09);
+}
+
+.mission-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 9px;
+
+  background: #e8f8ef;
+  color: #25a766;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.mission-card h3 {
+  font-size: 18px;
+
+  margin: 0 0 9px;
+
+  color: #1d3025;
+}
+
+.mission-card p {
+  color: #77837c;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+/* =========================
+   IMPACT
+========================= */
+
+.about-impact {
+  width: min(1150px, 90%);
+
+  margin: 90px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.about-impact-content h2 {
+  font-size: 38px;
+  line-height: 1.2;
+
+  margin: 0 0 17px;
+
+  color: #17271e;
+}
+
+.about-impact-content > p {
+  color: #718078;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+
+  margin-bottom: 30px;
+}
+
+.impact-points {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.impact-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.impact-point > span {
+  width: 37px;
+  height: 37px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #e7f8ee;
+
+  color: #25a766;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.impact-point h3 {
+  margin: 0 0 3px;
+
+  font-size: 16px;
+
+  color: #25382d;
+}
+
+.impact-point p {
+  margin: 0;
+
+  color: #7a867f;
+
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.about-impact-image img {
+  width: 100%;
+  height: 530px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  display: block;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.about-stats {
+  background: #10271c;
+
+  padding: 45px 7%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.about-stat {
+  text-align: center;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-stat:last-child {
+  border-right: none;
+}
+
+.about-stat strong {
+  display: block;
+
+  color: #51ca87;
+
+  font-size: 31px;
+}
+
+.about-stat span {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 12px;
+
+  margin-top: 5px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(11, 36, 24, 0.97),
+      rgba(11, 36, 24, 0.9)
+    ),
+    url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=80")
+      center / cover;
+
+  padding: 70px 7%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 45px;
+}
+
+.about-cta > div:first-child {
+  max-width: 680px;
+}
+
+.about-cta span {
+  color: #4fc783;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.about-cta h2 {
+  color: white;
+
+  font-size: 35px;
+
+  margin: 10px 0;
+}
+
+.about-cta p {
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+.about-cta-buttons {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.about-footer {
+  background: #09160f;
+
+  color: white;
+
+  padding: 28px 7%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.about-footer strong {
+  display: block;
+
+  font-size: 20px;
+}
+
+.about-footer span {
+  display: block;
+
+  color: #7d8a82;
+
+  font-size: 12px;
+
+  margin-top: 4px;
+}
+
+.about-footer p {
+  color: #718078;
+
+  font-size: 12px;
+
+  margin: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .about-intro,
+  .about-impact {
+    gap: 45px;
+  }
+
+  .mission-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-intro-content h2,
+  .about-impact-content h2 {
+    font-size: 32px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .about-hero {
+    min-height: 500px;
+  }
+
+  .about-hero-content {
+    margin-left: 6%;
+  }
+
+  .about-hero h1 {
+    font-size: 42px;
+  }
+
+  .about-hero p {
+    font-size: 15px;
+  }
+
+  .about-intro,
+  .about-impact {
+    width: 88%;
+
+    grid-template-columns: 1fr;
+
+    margin: 65px auto;
+
+    gap: 45px;
+  }
+
+  .about-intro-image img,
+  .about-impact-image img {
+    height: 380px;
+  }
+
+  .impact-card {
+    right: 12px;
+    bottom: 15px;
+  }
+
+  .mission-section {
+    padding: 65px 6%;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-heading h2 {
+    font-size: 30px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 40px 6%;
+  }
+
+  .about-stat {
+    border-right: none;
+  }
+
+  .about-cta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 55px 6%;
+  }
+
+  .about-cta h2 {
+    font-size: 29px;
+  }
+
+  .about-cta-buttons {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  .about-cta-buttons button {
+    width: 100%;
+  }
+
+  .about-footer {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 28px 6%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-hero h1 {
+    font-size: 36px;
+  }
+
+  .about-hero-buttons {
+    flex-direction: column;
+  }
+
+  .about-hero-buttons button {
+    width: 100%;
+  }
+
+  .about-intro-content h2,
+  .about-impact-content h2 {
+    font-size: 29px;
+  }
+
+  .about-intro-image img,
+  .about-impact-image img {
+    height: 320px;
+  }
+}
